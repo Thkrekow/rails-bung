@@ -1,1 +1,9 @@
 <h1>Telefon- und Adressbuch</h1>
+<p>Neue Einträge vornemen...</p>
+
+<button type="button" class="btn btn-default"><%= link_to "Neuer Eintrag", new_item_path%></button>
+
+<% @items.each do |item| %>
+  <h2><%= item.title %></h2>
+  <p><%= item.description %></p>
+<% end %>

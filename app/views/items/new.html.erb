@@ -1,0 +1,7 @@
+<h1>Neuen Eintrag vornehmen</h1>
+
+<%= simple_form_for @item do |f| %>
+  <%= f.input :title, label: "Aufgabe" %>
+  <%= f.input :description, label: "Informationen" %>
+  <%= f.button :submit, "Erstellen" %>
+<% end %>
