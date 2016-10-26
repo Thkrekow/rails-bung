@@ -2,6 +2,6 @@
 <%= link_to "Neuer Eintrag", new_item_path, class: "btn btn-default"%>
 <hr>
 <% @items.each do |item| %>
-  <h3><%= item.title %></h3>
+  <h2><%= link_to item.title, item %></h2>
   <p><%= item.description %></p>
 <% end %>
